@@ -16,6 +16,4 @@ class state_management{
     }
 }
 
-if (typeof window !== 'undefined') {
-    window.state_management = new state_management();
-}
+export default state_management;
