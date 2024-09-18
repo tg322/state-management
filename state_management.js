@@ -9,8 +9,10 @@ class state_management{
         const getState = () => state;
 
         const setState = (newValue) => {
-            state = newValue;
-            console.log('state updated.');
+            return new Promise((resolve) => {
+                state = newValue;
+                resolve(state); // Resolve the promise once the state has been updated
+            });
         }
 
         return [getState, setState]
