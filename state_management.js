@@ -10,6 +10,7 @@ class state_management{
 
         const setState = (newValue) => {
             state = newValue;
+            console.log('state updated.');
         }
 
         return [getState, setState]
