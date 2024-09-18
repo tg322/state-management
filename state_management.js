@@ -15,5 +15,3 @@ class state_management{
         return [getState, setState]
     }
 }
-
-export default state_management;
