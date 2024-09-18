@@ -15,3 +15,9 @@ class state_management{
         return [getState, setState]
     }
 }
+
+export default state_management;
+
+if (typeof window !== 'undefined') {
+    window.state_management = new state_management();
+}
